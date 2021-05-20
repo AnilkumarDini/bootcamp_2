@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bad+Script&family=Montserrat&family=KoHo:wght@300&family=Montserrat:wght@300&family=Sacramento&display=swap');
+:root {
+  --header-height: 3rem;
+  --font_1: 'Amatic SC', cursive;
+  --font_2: 'Bad Script', cursive;
+  --font_3:'Sacramento', cursive;
+  --font_4:'KoHo', sans-serif;
+
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+body {
+  margin:var(--header-height) 0 0 0;
+  font-family: var(--font_1);
+  text-align: center;
+  background-color:  #1c1b43;
+}
+a{
+  text-decoration: none;
+  margin-left: 1.5em;
+  color:whitesmoke;
+
+}
+a:hover{
+  color: #acacac;;
+}
+h1{
+  font-size: 150px;
+  font-style:bold;
+  font-family: var(--font_3);
+}
+h1{
+  background: -webkit-linear-gradient(#cc0e74,#1c1b43);
+  background-clip:content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+  
+}
+.title_2{
+  text-decoration: none;
+  text-shadow: none;
+  font-family: var(--font_1);
+  font-size: 100px;
+}
+
+.top_container{
+  margin: 25px,25px;
+  padding-top: 150px;
+  padding-bottom: 200px;
+  color:#ac9cc0;
+  font-family: var(--font_3);  
+  vertical-align:bottom;
+  background-image: url(https://i1.wp.com/windowscustomization.com/wp-content/uploads/2020/06/Vector-Mountain-4K.gif?fit=768%2C432&quality=80&strip=all&ssl=1);
+  background-repeat: no-repeat;
+  background-size: 83rem 45rem;
+  background-position:top;
+
+}
+.about{
+  width:30%;
+  margin:auto;
+}
+.skills{
+  width:30%;
+  margin:auto;
+}
+.contact{
+  width:30%;
+  margin:auto;
+}
+
+.bottom_container{
+padding: 100px 300px;
+margin-top: 55px;
+margin-bottom: 50px;
+margin-left: 95px;
+margin-right: 95px;
+display: block;
+background-color: #ac9cc0;
+
+}
+
+h2{
+  font-family: var(--font_1);
+  font-size: 3rem;
+  font-weight: block;
+  padding-bottom: 25px;
+}
+p{
+  font-family: var(--font_2);
+  font-size: 1.25rem;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+hr{
+  border:dotted 6px;
+  border-bottom: none;
+  width:4%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  color: #1c1b43;
+}
+.button{
+  display: inline-block;
+  background-color:#03506f;
+  padding: 10px 20px 10px 20px;
+  border-radius: 8px;
+  font-size: 23px;
+  text-decoration: none;
+  color:whitesmoke;
+  font-family: var(--font_4);
+}
+
+.header{
+  width: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+  background-color:#1c1b43;
+
+}
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2em;
+  padding-right: 3em;
+  float: right;
+
+}
+
+.nav_list{
+  display: flex;
+  font-family: var(--font_4);
+  font-size: 20px;
+}
+.button:hover{
+  background:#1c1b43;
+}
+.u{
+  text-decoration-style:wavy;
+   text-decoration-thickness: 3px;
+   text-decoration-color: #1c1b43;
+}
+.title{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hello{
+  font-size: 5.6rem;
+  text-align: center;
+  line-height: 1;
+  color: #cc0e74;
+  animation: neon .22s ease-in-out infinite alternate;
+}
+@keyframes neon{
+  from{
+    text-shadow:
+    0 0 6px #ffe6ff,
+    0 0 30px #ff65bd ,
+    0 0 12px #ff65bd,
+    0 0 21px #ff65bd ,
+    0 0 34px #ff2483 ,
+    0 0 54px #ff2483 ;
+
+
+  }
+  to{
+    text-shadow: 
+    0 0 6px #ffe6ff),
+    0 0 30px #ff65bd ,
+    0 0 12px #ff65bd ,
+    0 0 22px #ff65bd ,
+    0 0 38px #ff2483 ,
+    0 0 60px #ff2483 ;
+  }
+}
